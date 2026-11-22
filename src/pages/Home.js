@@ -90,7 +90,7 @@ function Home() {
             <section className="container hero">
                 <div className="heroTxt">
                     <h1 className="name">Samantha Urwin</h1>
-                    <p className="jobTitle">Web Designer & Full Stack Developer</p>
+                    <p className="jobTitle">Web Designer & Front-End Developer</p>
                     <div className="mt-3 flex-row flex-wrap gapSm justify-center">
                         <Button color="secondary" text="Get in Touch" link="/contact" location="internal"/>
                         <Button color="primary" text="View Portfolio" link="/portfolio" location="internal" />
@@ -184,7 +184,7 @@ function Home() {
 
                 </div>
 
-                <Button color="secondary" text="My Resume" link="https://drive.google.com/file/d/17zkRquQqufnLo7R-mcDZW4X642Re_Yby/view?usp=sharing"/>
+                <Button color="secondary" text="My Resume" link="https://drive.google.com/file/d/15ZleeMF2vIjqQu0kYqthmbodDE1fcbLd/view?usp=sharing"/>
             </section>
 
             <section className="container sectionSpacing">

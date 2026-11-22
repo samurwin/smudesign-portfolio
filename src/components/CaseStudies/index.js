@@ -6,15 +6,15 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import "./style.css";
 
-import { rwi, altitudeApparel } from '../../assets/projectInfo'
+import { trippyTravel, altitudeApparel } from '../../assets/projectInfo'
 import { Link } from 'react-router-dom'
 
 export default function CaseStudies() {
 
     const featuredProjects = [
         {
-            projectInfo: rwi,
-            link: '/portfolio/rwi-case-study'
+            projectInfo: trippyTravel,
+            link: '/portfolio/trippy-travel-planner'
         },
         {
             projectInfo: altitudeApparel,

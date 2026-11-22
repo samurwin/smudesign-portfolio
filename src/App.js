@@ -9,8 +9,9 @@ import Portfolio from './pages/Portfolio';
 import Rwi from './pages/Rwi';
 import Project from './pages/Project';
 import Altitude from './pages/Altitude'
+import Trippy from './pages/Trippy';
 
-import { projectInfo, rwi, altitudeApparel } from './assets/projectInfo'
+import { projectInfo, altitudeApparel , trippyTravel} from './assets/projectInfo'
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
             <Route exact path='/' component={Home} />
 
             <Route exact path='/portfolio'>
-              <Portfolio projects={projectInfo} rwi={rwi} altitudeApparel={altitudeApparel} />
+              <Portfolio projects={projectInfo} altitudeApparel={altitudeApparel} trippyTravel={trippyTravel} />
             </Route>
 
             <Route exact path='/contact'>
@@ -38,6 +39,7 @@ function App() {
             <Route exact path='/portfolio/rwi-case-study' component={ Rwi } />
 
             <Route exact path='/portfolio/altitude-apparel' component={ Altitude } />
+            <Route exact path='/portfolio/trippy-travel-planner' component={ Trippy }/>
 
             {projectInfo.map((info) => (
               <Route exact path={info.path} key={info.title}>

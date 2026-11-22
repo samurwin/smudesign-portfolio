@@ -42,6 +42,18 @@ import columnThree02 from './altitude/columnThree-2.png'
 import columnThree03 from './altitude/columnThree-3.png'
 import columnThree04 from './altitude/columnThree-4.png'
 
+import trippyThumbnail from './trippy/trippy-project-thumbnail.png';
+import frameOne from './trippy/start-planning-wireframe.png';
+import frameTwo from './trippy/explore-wireframe.png';
+import frameThree from './trippy/place-wireframe.png';
+import frameFour from './trippy/place-reviews-wireframe.png';
+import frameFiveA from './trippy/single-day-modal-wireframe.png';
+import frameFiveB from './trippy/multi-day-modal-wireframe.png';
+import frameSix from './trippy/added-to-itinerary-wireframe.png';
+import frameSeven from './trippy/itinerary-wireframe.png';
+import trippyVideoThumbnail from './trippy/prototype-video-thumbnail.png';
+
+
 const altitudeImgs = {
     bannerImg: altitudeThumbnail,
     brand: [
@@ -239,4 +251,43 @@ const francaisImgs = {
     ]
 }
 
-export { rwiImgs, alloveusImgs, devDiariesImgs, savouryImgs, francaisImgs, altitudeImgs } 
+const trippyImgs = {
+    bannerImg: trippyThumbnail,
+    wireframes: [
+        {
+            img: frameOne,
+            alt: "Wireframe of the start planning view for Trippy Travel Planner"
+        },
+        {
+            img: frameTwo,
+            alt: "Wireframe of the explore view for Trippy Travel Planner"
+        },
+        {
+            img: frameThree,
+            alt: "Wireframe of the place view for Trippy Travel Planner"
+        },
+        {
+            img: frameFour,
+            alt: "Wireframe of the place reviews view for Trippy Travel Planner"
+        },
+        {
+            img: frameFiveA,
+            alt: "Wireframe of the single day modal view for Trippy Travel Planner"
+        },
+        {
+            img: frameFiveB,
+            alt: "Wireframe of the multi day modal view for Trippy Travel Planner"
+        },
+        {
+            img: frameSix,
+            alt: "Wireframe of the added to itinerary view for Trippy Travel Planner"
+        },
+        {
+            img: frameSeven,
+            alt: "Wireframe of the itinerary view for Trippy Travel Planner"
+        }, 
+    ],
+    trippyVideoThumbnail: trippyVideoThumbnail,
+}
+
+export { rwiImgs, alloveusImgs, devDiariesImgs, savouryImgs, francaisImgs, altitudeImgs, trippyImgs } 

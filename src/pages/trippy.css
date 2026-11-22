@@ -1,0 +1,323 @@
+.feature-title{
+    font-family: Milgran;
+}
+.feature-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    color: var(--tertiary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .feature-label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 1px;
+    background: var(--tertiary);
+  }
+
+.section-divider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+.section-divider:first-of-type { margin-top: 0; }
+.section-num {
+font-family: 'Helvetica Neue', Arial, sans-serif;
+font-size: 12px;
+font-weight: 600;
+color: var(--secondary);
+background: #36393B;
+width: 28px;
+height: 28px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-shrink: 0;
+}
+.section-title {
+font-family: 'Helvetica Neue', Arial, sans-serif;
+font-size: 13px;
+font-weight: 600;
+color: #CECECE;
+letter-spacing: 0.05em;
+}
+.section-line {
+flex: 1;
+height: 1px;
+background: #36393B;
+}
+
+
+/* Persona card */
+  .persona-strip {
+    display: flex;
+    gap: 0;
+    border: 1px solid #36393B;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .persona-accent {
+    width: 6px;
+    background: var(--primary);
+    flex-shrink: 0;
+  }
+  .persona-body {
+    flex: 1;
+    background: #0E0E0F;
+    color: #CECECE;
+  }
+  .persona-eyebrow {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--light);
+    letter-spacing: 0.1em;
+    margin-bottom: var(--spacing-two);
+  }
+  .persona-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--light);
+    margin-bottom: var(--spacing-two);
+  }
+  .persona-desc {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  .persona-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top:var(--spacing-three);
+  }
+  .tag {
+    font-size: 12px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+  }
+
+  /* User Journey */
+  .journey-timeline {
+    position: relative;
+  }
+  .journey-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .journey-step {
+    display: flex;
+    gap: 20px;
+    position: relative;
+  }
+  .journey-step:last-child { padding-bottom: 0; }
+  .journey-step-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    width: 28px;
+  }
+  .journey-step-circle {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--light);
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .journey-step-line {
+    width: 1px;
+    flex: 1;
+    background: #36393B;
+    margin-top: 4px;
+  }
+  .journey-step:last-child .journey-step-line { display: none; }
+  .journey-step-content {
+    padding-top: 4px;
+    flex: 1;
+  }
+  .journey-step-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--light);
+    margin-bottom: 4px;
+  }
+  .journey-step-text {
+    font-size: 14px;
+    color: #CECECE;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* Frame blocks */
+  .frame-block {
+    margin: 40px 0;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #36393B;
+  }
+ 
+  .frame-header {
+    background: #36393B;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .frame-tag {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--primary);
+    background: #0E0E0F;
+    padding: 3px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.06em;
+    flex-shrink: 0;
+  }
+  .frame-name {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--light);
+  }
+ 
+  .frame-body {
+    padding: 24px 28px;
+    background: #0E0E0F;
+    color: #cecece;
+  }
+ 
+  .frame-body h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--light);
+    margin-bottom: 10px;
+    letter-spacing: -0.01em;
+  }
+ 
+  .frame-body p {
+    font-size: 15px;
+    margin-bottom: 14px;
+  }
+ 
+  /* Wireframe placeholder */
+  .wireframe-placeholder {
+    margin: 20px 0 4px;
+    background: #36393B;
+    border: 1.5px dashed #cecece;
+    border-radius: 5px;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .wireframe-label {
+    font-size: 12px;
+    color: #cecece;
+    font-weight: 500;
+  }
+ 
+  /* Decision callout */
+  .decision-box {
+    margin-top: 20px;
+    padding: 16px 20px;
+    background: #36393B;
+    border-radius: 10px;
+    border-left: 3px solid var(--tertiary);
+  }
+  .decision-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--tertiary);
+    letter-spacing: 0.08em;
+    margin-bottom: 6px;
+  }
+  .decision-text {
+    font-size: 14px;
+    color: var(--light);
+    line-height: 1.6;
+    margin: 0;
+  }
+ 
+  /* Modal frames side by side */
+  .frame-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 20px 0 4px;
+  }
+  .mini-frame {
+    background: var(--surface-tint);
+    border: 1.5px dashed var(--border-strong);
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .mini-frame-label {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 11px;
+    color: var(--ink-soft);
+    font-weight: 500;
+    text-align: center;
+  }
+ .wireframe-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .proto {
+  --proto-border: rgba(26, 26, 46, 0.14);
+  --proto-text: #3d3d5c;
+}
+ 
+@media (prefers-color-scheme: dark) {
+  .proto {
+    --proto-border: rgba(232, 232, 244, 0.14);
+    --proto-text: #b8b8d4;
+  }
+}
+ 
+.proto__title {
+  font-size: 1.5rem;
+  margin: 0 0 8px;
+}
+ 
+.proto__desc {
+  color: var(--proto-text);
+  max-width: 640px;
+  margin: 0 0 20px;
+  line-height: 1.6;
+}
+ 
+.proto__frame {
+  border: 1px solid var(--proto-border);
+  border-radius: 16px;
+  overflow: hidden;
+  background: #000;
+    max-width: 500px;
+    margin: 0 auto;
+}
+ 
+.proto__video {
+  display: block;
+  width: 100%;
+    height: auto;
+  /* aspect-ratio: 9 / 16;  */
+  object-fit: contain;
+}
+ 

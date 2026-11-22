@@ -1,14 +1,12 @@
-import React from 'react';
 import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 import './portfolio.css';
 import { socialLinksAll } from '../assets/projectInfo'
 
-import rwiThumbnail from '../assets/images/RWI-Labs-thumbnail.jpg'
-import altitudeThumbnail from '../assets/images/altitude-thumbnail.png'
+
 import Socials from '../components/Socials';
 
-function Portfolio({projects, rwi, altitudeApparel}) {
+function Portfolio({projects, altitudeApparel, trippyTravel}) {
 
 
     return (
@@ -29,69 +27,22 @@ function Portfolio({projects, rwi, altitudeApparel}) {
             </div>
           </section>
 
-          {/* <section className="sectionSpacing container max800">
-            <h3 className="text-secondary text-center">Featured Projects</h3>
-            <Link to='/portfolio/rwi-case-study'>
-              <div 
-                className="caseStudyImg my-4 cursorPointer"
-                style={{ 
-                    backgroundImage: `url(${rwiThumbnail})`,
-                    backgroundSize: 'cover',
-                }}
-              ></div>
-              <div>
-                <h4 
-                className="text-primary text-center cursorPointer noDecoration"
-                >
-                  RWI Labs
-                </h4>
-                <p className="text-secondary text-center noDecoration">Digital Marketing Agency</p>
-                <div className="flex-row align-center justify-center gapSm">
-                  <p className="tagTxt">Web Design</p>
-                  <p className="tagTxt">Development</p>
-                  <p className="tagTxt">Brand Design</p>
-                </div>
-              </div>
-            </Link>
-
-            <Link to='/portfolio/altitude-apparel'>
-              <div 
-                className="caseStudyImg my-4 cursorPointer"
-                style={{ 
-                    backgroundImage: `url(${altitudeThumbnail})`,
-                    backgroundSize: 'cover',
-                }}
-              ></div>
-              <div>
-                <h4 
-                className="text-primary text-center cursorPointer noDecoration"
-                >
-                  Altitude Apparel
-                </h4>
-                <p className="text-secondary text-center noDecoration">Active Wear Company</p>
-                <div className="flex-row align-center justify-center gapSm">
-                  <p className="tagTxt">Web Design</p>
-                  <p className="tagTxt">Brand Design</p>
-                </div>
-              </div>
-            </Link>
-          </section> */}
 
           <section className="container sectionSpacing">
             <h3 className="text-secondary text-center">Projects</h3>
             <div className="my-4 flex-row gapLg justify-space-between align-center max1000 mx-auto">
-            <Link to={rwi.path} className="mx-auto cursorPointer">
+            <Link to={trippyTravel.path} className="projectCard mx-auto cursorPointer">
                   <div
                     className="projectImg"
                     style={{ 
-                      backgroundImage: `url(${rwi.bannerImg})`,
+                      backgroundImage: `url(${trippyTravel.bannerImg})`,
                       backgroundSize: 'cover',
                       backgroundPosition: 'center'
                     }}
                     >
                   </div>
                 </Link>
-                <Link to={altitudeApparel.path} className="mx-auto cursorPointer">
+                <Link to={altitudeApparel.path} className="projectCard mx-auto cursorPointer">
                   <div
                     className="projectImg"
                     style={{ 
@@ -103,7 +54,7 @@ function Portfolio({projects, rwi, altitudeApparel}) {
                   </div>
                 </Link>
               {projects.map((project) => (
-                  <Link to={project.path} key={project.title} className="mx-auto cursorPointer">
+                  <Link to={project.path} key={project.title} className="projectCard mx-auto cursorPointer">
                     <div
                     className="projectImg"
                     style={{ 

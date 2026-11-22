@@ -23,6 +23,10 @@
 
 .aboutImg {
     margin-bottom: 40px;
+    border: solid 6px var(--tertiary);
+    border-radius: 4px;
+    aspect-ratio: 9 / 10;
+    overflow: hidden;
 }
 
 .aboutImg img {
