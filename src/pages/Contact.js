@@ -41,9 +41,7 @@ function Contact() {
         
     // };
 
-    function onClick(link) {
-        window.open(link, '_blank');
-    }
+
 
     return (
         <div className="wrapper">

@@ -1,8 +1,8 @@
-import { alloveusImgs, devDiariesImgs, savouryImgs, francaisImgs, rwiImgs, altitudeImgs, trippyImgs } from './images';
+import { devDiariesImgs, francaisImgs, rwiImgs, altitudeImgs, trippyImgs } from './images';
 
-import { FaReact, FaShopify, FaNodeJs } from 'react-icons/fa'
-import { DiMongodb, DiMysql } from 'react-icons/di'
-import { SiTypescript, SiNextdotjs, SiGraphql, SiFigma, SiAdobecreativecloud } from 'react-icons/si'
+import { FaReact, FaNodeJs } from 'react-icons/fa'
+import { DiMysql } from 'react-icons/di'
+import { SiTypescript, SiNextdotjs, SiFigma, SiAdobecreativecloud } from 'react-icons/si'
 import { FaGithub, FaLinkedinIn, FaDribbble } from 'react-icons/fa';
 
 const projectInfo = [

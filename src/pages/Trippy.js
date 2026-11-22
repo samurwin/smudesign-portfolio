@@ -5,7 +5,6 @@ import './projects.css';
 import './trippy.css';
 import ProjectHeading from '../components/ProjectHeading';
 import TechSquare from '../components/TechSquare';
-import Button from '../components/Button';
 import trippyVideo from '../assets/images/trippy/prototype-flow-walkthrough.mp4';
 
 import { trippyTravel } from '../assets/projectInfo';
